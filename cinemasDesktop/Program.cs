@@ -14,6 +14,8 @@ namespace cinemasDesktop
         [STAThread]
         static void Main()
         {
+            RestController rest = new RestController();
+            rest.GetScreenings();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
